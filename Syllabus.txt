@@ -1,0 +1,49 @@
+Full Stack Development
+---------------------------
+Problem Solving
+	-> Arrays
+	-> Strings
+	-> Searching and Sorting
+	-> Stacks
+	-> Queues
+	-> Recursion
+	-> Lists
+		-> Singly Linked List
+		-> Doubly Linked List
+		-> Circular Linked List
+	-> Trees
+		-> Binary Trees
+		-> Binary Search Trees
+		-> Traversals -> InOrder, PostOrder, PreOrder
+		-> BFS, DFS..
+		-> Other
+	-> Dynamic Programming
+
+Java Programming Basics
+	-> OOPS
+	-> Strings
+	-> Arrays
+	-> Operators
+	-> Collection
+	-> Exception Handling
+	-> Multithreading
+	-> Java IO
+	-> Java 8 Features
+	
+Java Programming Advanced
+	-> Servlets
+	-> JSP
+	-> Hibernates
+	-> Spring 
+	-> Spring MVC
+	-> Spring Boot
+	-> Spring JPA
+	-> Microservices
+	
+Front End
+	-> HTML
+	-> CSS
+	-> JavaScript
+	-> TypeScript
+	-> React / Angular 
+	

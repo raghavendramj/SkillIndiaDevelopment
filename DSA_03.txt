@@ -1,0 +1,59 @@
+Write a program to check whether a string is a palindrome or not.
+
+Input -> "madam" -> Is this string a palindrome -> YES
+Input -> "gadag" -> Is this string a palindrome -> YES
+Input -> "raghav" -> Is this string a palindrome -> NO
+Input -> "aba" -> Is this string a palindrome -> YES
+Input -> "abcd" -> Is this string a palindrome -> NO
+Input -> "abda" -> Is this string a palindrome -> NO
+
+
+str -> madam
+	     <------- i
+temp -> madam
+
+
+is str.equals(temp)  ==> PALINDROME
+is str.equals(temp)  ==> NOT PALINDROME
+
+
+Write a program to find 1st non repeating charcter in a given string
+
+	-> raghavendra
+		-> r -> NO
+		-> a -> NO
+		-> g -> First Non  repeating character 
+		-> h -> Non repeating character		
+	
+	-> skillindiaskan
+	-> s ->NO
+	-> k ->NO
+    -> i -> NO
+	-> l ->NO
+	-> n -> NO
+	-> d -> YES -> First Non repeating character in the string
+	
+	
+Write a program to check given two stringsm, check whether they are anagrams or not?
+
+	-> SAME SET OF Characters are used
+			SILENT -> LISTEN  -> YES
+			CARE -> RACE  -> YES
+			PART -> TRAP  -> YES
+			HEART -> EARTH  -> YES		
+			RAGHAV -> ENDRA  -> NO		
+			
+			boolean areAnagrams(String input1, String input2){
+			}
+			
+			
+		
+		
+		
+		
+
+	
+
+
+		
+		

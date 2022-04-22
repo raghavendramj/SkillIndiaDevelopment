@@ -1,0 +1,44 @@
+Given an array, reverse the array and return 
+				[4, 2, 1, 6, 8, 5];
+int arr[] = [5, 8, 6, 1, 2, 4];
+					    j	i			
+				temp <- arr[i] -> 4
+				arr[i] -> arr[j] -> 5
+				arr[j] -> temp -> 4
+				
+				i++;
+				j--			
+			
+			
+2nd Problem:- 
+Given an array, find out the kth smallest/largest element in the array
+int inp[] = {7, 10, 4, 3, 20, 15};
+
+Step 1:- Sort the numbers
+	Sorted:- In Ascending order :- 3, 4, 7, 10, 15, 20
+	Sorted:- In Descending order :- 20, 15, 10, 7, 4, 3
+	
+	7, 10, 4, 3, 20, 15
+	4, 10, 7, 3, 20, 15
+	3, 10, 7, 4, 20, 15
+	-------------------
+	3, |10, 7, 4, 20, 15
+	3, | 4, 7, 10, 20, 15
+	-------------------
+	3, 4, | 7, 10, 20, 15
+	-------------------
+	3, 4, 7, 10, | 20, 15
+	3, 4, 7, 10, 15, | 20
+	-------------------
+	3, 4, 7, 10, 15, 20
+
+Step 2 :- k-> 2
+	3, 4, 7, 10, 15, 20	
+	return arr[k-1]; -> kth Smallest(Ascending) & largest(Descending)	
+	return arr[arr.length - k-1]; -> kth Largest
+
+
+			
+
+
+
