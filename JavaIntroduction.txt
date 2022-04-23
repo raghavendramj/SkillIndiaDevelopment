@@ -1,0 +1,153 @@
+Installation:-
+1. We download the jdk ->
+
+Windows x64 Installer	140.24 MB
+jdk-11.0.14_windows-x64_bin.exe
+
+WINDOWS
+	-> Execution environment -> JRE -> Java Runtime Environment -> All the internal libraries for us to consume
+		-> Java Code -> JDK -> Java Development Toolkit
+		-> Two Important things
+			  -> javac -> java compiler
+			  -> java - java interpreter
+
+Step1:- Compile the java program :-
+	Syntax :- javac <FileName.java>
+	Example :- javac First.java -> First.class(ByteCode)
+	Example :- javac Second.java -> CustomClassName.class (ByteCode)
+
+	Result -> .class -> BYTECODE -> understood by the system
+
+Step 2:- Executing the program
+	Syntax :- java ClassName
+	Example :- java First -> Output -> Welcome to Java
+	Example :- java CustomClassName -> Output -> Welcome to Java
+
+
+Access Modifiers
+	-> private -> only class members can access it
+	-> protected -> Class members and its subclasses can access it
+	-> default -> Class members and its classes in the same package can access it
+	-> public -> Can be accessed from anywhere
+
+
+Main
+	JVM should be able view this class from its place without creating the object
+	-> public static void
+	-> public -> can be accessed anywhere(JVM)
+	-> static -> Can be accessed without an object, but with classname -> ex:- First.main()
+	-> void -> Because JVM doesn't need anything in return
+	-> main -> entry point for JVM to invoke a class
+	-> args[] -> we can pass arguments dynamically to the main function
+
+
+Arguments Example :-
+------------------------
+C:\Users\Raghavendra M J\OneDrive\Desktop\Online_Classes\Skill_Development_India\UsingCMD>javac ArgumentsExample.java
+C:\Users\Raghavendra M J\OneDrive\Desktop\Online_Classes\Skill_Development_India\UsingCMD>java ArgumentsExample <arg1> <arg1>.....
+C:\Users\Raghavendra M J\OneDrive\Desktop\Online_Classes\Skill_Development_India\UsingCMD>java ArgumentsExample My Name is John Doe
+############# List of arguments passed are...........
+Args : My
+Args : Name
+Args : is
+Args : John
+Args : Doe
+
+Why System.out.println();
+	-> PrintWriter -> Class
+			-> println(String content)
+			-> print(String content)
+	-> System
+			public static PrintWriter out;
+Example :- System.out.println("Welcome to the world of Java");
+
+Java is not completely Object oriented programming language, because of presence of primitive data types
+But, we can make it completely Object oriented programming language, by using only wrapper classes instead of primitive data types
+	PDT		-> Wrapper Class
+	---------------------------
+	byte	 	-> Byte
+	short	-> Short
+	int		-> Integer
+	long		-> Long
+	---------------------------
+	float			-> 	Float
+	double 	-> 	Double
+	boolean	-> 	Boolean
+	---------------------------
+
+Datatypes :-
+	Primitive Data Types
+	---------------------------
+	1 Byte = 8 bits
+	---------------------------
+	byte -> 1 byte
+	short-> 2 bytes
+	int	-> 4 bytes
+	long	-> 8 bytes
+	---------------------------
+	float	-> 4 bytes -> ex:- 12.22
+	double -> 8 bytes -> ex:- 45.67
+	boolean -> 1bit
+	---------------------------
+	String -> Class
+	---------------------------
+	
+How to create object:-
+---------------------------
+	Syntax :- ClassName referenceVariableName = new ClassName();
+	Example:-
+		Employee employee = new Employee();
+	ClassName -> Class name or Reference Type
+	referenceVariableName -> this is to identify the type of the variable -> Reference Variable
+	new -> Used to procure the memory from the system ->(HEAP)
+	ClassName() -> constructor -> Default Constructor
+
+	Constructors
+	--------------
+		-> for initializing the object
+		-> won't have return types
+
+		1. Default Constructor
+			-> By default system gives us this
+			Syntax :- public ClassName();
+			example :- public Employee();
+
+		2. Parameterized Constructor
+			-> We write our custom parameterized Constructor
+			Syntax :- public ClassName(ParameterDatatype variable, ...);
+			Syntax :- public Employee(String firstName, int age);
+
+Static Members:-
+-----------------
+-> All static members are class level members
+	-> static variables will become class level variables
+		-> Without creating the object, one can access the static members from inside or outside the class with ClassName
+-> We can access static members from non static and static members, 
+-> We can't access non static members inside a static member
+		
+   class Animal{
+		static String name = 'Cheethah'; 
+		public static String getAnimal(){
+			return 'Tiger';
+		}
+	}
+	
+	class TestStatic{
+		public static void main(String args[]){		
+			System.out.println("Content : "+ Animal.name);
+			System.out.println("Content : "+ Animal.getAnimal());
+		}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
