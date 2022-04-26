@@ -115,7 +115,7 @@ How to create object:-
 		2. Parameterized Constructor
 			-> We write our custom parameterized Constructor
 			Syntax :- public ClassName(ParameterDatatype variable, ...);
-			Syntax :- public Employee(String firstName, int age);
+			example :- public Employee(String firstName, int age);
 
 Static Members:-
 -----------------
@@ -126,7 +126,7 @@ Static Members:-
 -> We can't access non static members inside a static member
 		
    class Animal{
-		static String name = 'Cheethah'; 
+		static String name = 'Cheetah'; 
 		public static String getAnimal(){
 			return 'Tiger';
 		}
@@ -139,13 +139,33 @@ Static Members:-
 		}
 	}
 	
+Final Keyword
+------------------
+-> All the members declared as final will be unchanged or it becomes constant.
+	1. For Variables
+		-> They become constant.
+	2. For Class
+		-> you can't inherit
+	3.  For Methods
+		-> You can't override.
 
 
+OOPS
+-------
+Abstraction -> Process of hiding the implementation details and showing only functionality to the user
+Ways to achieve Abstraction
+-----------------------------
+1. Abstract Class -> 0 - 100%
+2. interface -> 100%
 
+Encapsulation
+Inheritance
+	class -> class -> extends
+	class -> interface -> implements
+	interface -> interface -> extends
+	
 
-
-
-
+Polymorphism
 
 
 
