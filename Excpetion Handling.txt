@@ -1,0 +1,5 @@
+try -> the error nous code 
+catch -> the block where exceptions are handled
+finally ->no matter we get exception or not this block will be executed
+throws -> used to inform the calling method, that this method can throw the exception
+throw -> manually throw the exception 

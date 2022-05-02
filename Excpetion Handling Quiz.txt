@@ -1,0 +1,40 @@
+Can have a catch or finally clause without a try statement.?
+
+
+A try statement should have either catch block or finally block or both?
+
+catch
+finally
+both
+Valid Combination
+try + catch()
+try + finally
+try + catch+ finally
+
+Can we write any code between try-catch-finally blocks.?
+
+A. Yes 
+B. No
+
+Ans: No
+
+
+Can we have multiple catch blocks with a single try statement?
+
+A. Yes
+B. No
+
+Ans: Yes
+
+Can we have try-catch blocks can be nested similar to if-else statements.?
+A. Yes
+B. No
+
+Ans: Yes
+
+Can We can have only one finally block with a try-catch statement.?
+A. Yes
+B. No
+
+Ans: Yes 
+
