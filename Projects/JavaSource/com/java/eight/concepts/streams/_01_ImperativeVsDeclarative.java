@@ -22,30 +22,23 @@ public class _01_ImperativeVsDeclarative {
         );
 
         //Imperative programming -> How
-        int moreLikes = 0;
         int moreThan25Likes = 0;
         for (Movie movie : movies) {
-            if (movie.getLikes() > moreLikes) {
-                moreLikes = movie.getLikes();
-            }
-
             if (movie.getLikes() > 25) {
                 moreThan25Likes++;
             }
         }
 
-        System.out.println("Movie with maximum likes : " + moreLikes);
         System.out.println("Movie with moreThan25Likes: " + moreThan25Likes);
 
         //Declarative -> What
-
-
 //        long moviesWith25PlusLikes = movieStream.filter(moreThan25LikesPred).count();
 //        System.out.println("Movie with moviesWith25PlusLikes: " + moviesWith25PlusLikes);
 
 
         Predicate<Movie> moreThan25LikesPred = movie -> movie.getLikes() > 25;
         Function<Movie, String> getNameOfTheMovie = movie -> movie.getName();
+
         //Stream Pipeline Example!
         Stream<Movie> movieStream = movies.stream(); //Source
         List<String> moviesList = movieStream
@@ -55,6 +48,11 @@ public class _01_ImperativeVsDeclarative {
                 .collect(Collectors.toList()); // -> Terminal Operation 2
 
 
+        //Stream PIPELINE!
+        List<String> movieNamesGt25 = movies.stream()
+                                .filter(movie -> movie.getLikes() > 25)
+                                .map(movie -> movie.getName())
+                                .collect(Collectors.toList());
 
         System.out.println("moviesList with greater than 25 likes " + moviesList);
     }
