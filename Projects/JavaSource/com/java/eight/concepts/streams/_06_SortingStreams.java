@@ -47,6 +47,5 @@ public class _06_SortingStreams {
                 .sorted(Comparator.comparing(keyExtractorLikesFn).reversed())
                 .forEach(System.out::println);
 
-
     }
 }
