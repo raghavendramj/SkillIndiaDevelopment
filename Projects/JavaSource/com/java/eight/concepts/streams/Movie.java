@@ -2,10 +2,15 @@ package com.java.eight.concepts.streams;
 
 import java.util.Objects;
 
+enum Genre {
+    COMEDY, ACTION, THRILLER;
+}
+
 public class Movie {
 
     private String title;
     private int likes;
+    private Genre genre;
 
     public String getTitle() {
         return title;
@@ -23,9 +28,22 @@ public class Movie {
         this.likes = likes;
     }
 
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+
     public Movie(String title, int likes) {
 
         this.title = title;
+        this.likes = likes;
+    }  public Movie(String title, int likes, Genre genre) {
+
+        this.title = title;
+        this.genre = genre;
         this.likes = likes;
     }
 

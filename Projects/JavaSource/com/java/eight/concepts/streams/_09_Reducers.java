@@ -25,5 +25,8 @@ public class _09_Reducers {
         System.out.println("findAny :- " + movies.stream().findAny().get());
         System.out.println("Movie with max likes :- " + movies.stream().max(Comparator.comparing(Movie::getLikes)));
         System.out.println("Movie with min likes :- " + movies.stream().min(Comparator.comparing(Movie::getLikes)));
+
+        Integer sumOfAllLIkes = movies.stream().map(movie -> movie.getLikes()).reduce(Integer::sum).get();
+        System.out.println("Sum of all likes : "+ sumOfAllLIkes);
     }
 }
